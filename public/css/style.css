@@ -1,0 +1,56 @@
+.center-navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+.center-navbar .navbar-collapse {
+    flex-grow: 0;
+  }
+
+:root {
+    --coffee-primary: #6F4E37;
+    --coffee-secondary: #8B4513;
+    --coffee-light: #F5F5DC;
+}
+
+.coffee-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.coffee-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.text-coffee {
+    color: #6F4E37;
+}
+
+.price {
+    color: #6F4E37;
+    font-size: 1.25rem;
+}
+
+.btn-outline-coffee {
+    color: #6F4E37;
+    border-color: #6F4E37;
+}
+
+.btn-outline-coffee:hover {
+    background-color: #6F4E37;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .coffee-card .col-md-4 {
+        height: 200px;
+    }
+
+    .coffee-card .col-md-8 {
+        padding-top: 15px;
+    }
+}
